@@ -1,0 +1,19 @@
+/**
+ * Tags styles
+ */
+
+.tags-container {
+	margin: 10px 0;
+
+	.tags-list {
+		margin: 15px 0;
+	}
+
+	.tag {
+		margin: 8px;
+		padding: 8px;
+		border-radius: 12px;
+		color: $white;
+		font-size: $small-size;
+	}
+}

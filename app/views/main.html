@@ -1,3 +1,22 @@
-<div class="">
-
+<div class="link-container">
+	<table class="table table-stripped">
+		<thead>
+			<tr>
+				<th>URL</th>
+				<th>Rating</th>
+				<th>Visits</th>
+				<th>Description</th>
+				<th>Hashtags</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="link in links">
+				<td>{{ link.url }}</td>
+				<td>{{ link.rating }}</td>
+				<td>{{ link.visits }}</td>
+				<td>{{ link.description }}</td>
+				<td>{{ link.tags.join(' ') }}</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

@@ -1,0 +1,22 @@
+<div class="inner-container add-link">
+	<h3>Add new link</h3>
+	<form class="form-inline clearfix">
+		<div class="col-xs-12 col-sm-4">
+	  		<div class="form-group">
+			    <label class="sr-only" for="newlink-url">Email address</label>
+			    <input type="url" class="form-control input-sm" id="link-url" placeholder="Enter url" ng-model="newLink.url"> 
+		  	</div>
+		  	<div class="form-group">
+		    	<label class="sr-only" for="newlink-description">Short description</label>
+		    	<input type="text" class="form-control  input-sm" id="newlink-description" placeholder="Short description" ng-model="newLink.description">
+		  	</div>
+	  		<rating stars="5" result="newLink.rating"></rating>
+		</div>
+		<div class="col-xs-12 clearfix">
+			<tags result="newLink.tags"></tags>
+		</div>
+		<div class="col-xs-12 clearfix">
+			<button class="btn btn-primary" ng-click="save()">Save</button>
+		</div>
+	</form>
+</div>
