@@ -1,0 +1,26 @@
+/**
+ * Top functions: add, sort
+ */
+
+.sort-menu {
+	ul {
+		list-style-type: none;
+		display: inline;
+		padding-left: 5px;
+	}
+	li {
+		display: inline;
+		margin-right: 15px;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+			color: $green-color;
+		}
+	}
+}
+
+.add-link {
+	form {
+		display: inline;
+	}
+}
