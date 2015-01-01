@@ -33,3 +33,9 @@ $small-size: 11px;
 	padding: 15px;
 	margin: 0 auto;
 }
+
+.bordered-panel {
+	border-radius: 10px;
+	border: 2px solid black;
+	margin-top: 10px;
+}

@@ -22,5 +22,12 @@ angular.module('linksListingApp')
     	return $http.post(baseURL, pObject);
     };
 
+    factoryObject.updateVisits = function(pObjectId, pNewVisits) {
+      var dataToUpdate = {
+        visits: pNewVisits
+      };
+      return $http.put(baseURL + '/' + pObjectId, dataToUpdate);
+    };
+
     return factoryObject;
   });

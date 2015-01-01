@@ -1,0 +1,11 @@
+/**
+ * Table styles
+ */
+
+.link {
+	cursor: pointer;
+	 &:hover {
+	 	text-decoration: underline;
+	 	color: $main-color
+	 }
+}

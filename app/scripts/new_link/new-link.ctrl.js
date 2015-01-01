@@ -11,6 +11,7 @@
 angular.module('linksListingApp')
   .controller('NewLinkCtrl', function ($scope, $rootScope, LinksService) {
   	$scope.newLink = {};
+
   	$scope.save = function() {
   		LinksService.saveLink($scope.newLink)
   			.success(function() {

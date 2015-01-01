@@ -17,14 +17,14 @@
 			color: $green-color;
 		}
 	}
+
+	.active {
+		text-decoration: underline;
+		color: $green-color;
+	}
 }
 
 .add-link {
-
-	border-radius: 10px;
-	border: 2px solid black;
-	margin-top: 10px;
-	
 	form {
 		display: inline;
 	}
