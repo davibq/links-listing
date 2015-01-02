@@ -16,6 +16,7 @@ angular.module('linksListingApp')
   		LinksService.saveLink($scope.newLink)
   			.success(function() {
   				$rootScope.$broadcast('linkSaved', $scope.newLink);
+  				$scope.newLink = {};
   			});
   	};
   });

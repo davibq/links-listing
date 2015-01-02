@@ -31,7 +31,7 @@ angular.module('linksListingApp')
 		$window.open($scope.links[pObjectIndex].url, '_blank');
 	};
 
-	$rootScope.$on("linkSaved", function (event, pLinkSaved) {
+	$rootScope.$on('linkSaved', function (event, pLinkSaved) {
 		$scope.links.push(pLinkSaved);
 	});
 
