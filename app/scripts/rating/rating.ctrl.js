@@ -16,6 +16,10 @@ angular.module('linksListingApp')
 
     /* Private functions */
 
+    /**
+     * Inits the scope
+     * @return {null}
+     */
   	function init() {
   		// Inits the stars array with the desired number of stars
   		$scope.starsObjects = [];
@@ -28,6 +32,12 @@ angular.module('linksListingApp')
 
 
     /* Scope functions */
+
+    /**
+     * Function triggered when the user pick a star
+     * @param  {int} pStarIndex Zero based index of the star selected
+     * @return {[type]}            [description]
+     */
     $scope.pickStar = function(pStarIndex) {
       $scope.result = pStarIndex + 1;
       $scope.starsObjects.forEach(function(pElement, pIndex) {

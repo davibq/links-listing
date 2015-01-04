@@ -31,7 +31,7 @@
 		</thead>
 		<tbody>
 			<tr ng-repeat="link in links | orderBy: orderProperty : true | filter:searchCriteria">
-				<td class="link" ng-click="goToLink($index)">{{ link.url }}</td>
+				<td class="link" ng-click="goToLink(link)">{{ link.url }}</td>
 				<td>{{ link.rating }}</td>
 				<td>{{ link.visits }}</td>
 				<td>{{ link.description }}</td>
